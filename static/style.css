@@ -1,0 +1,144 @@
+body {
+  background-color: #0b0c10;
+  color: #c5c6c7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.chat-container {
+  background-color: #1f2833;
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 0 10px #66fcf1;
+}
+
+.chat-box {
+  height: 400px;
+  overflow-y: auto;
+  background: #0b0c10;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #45a29e;
+  border-radius: 5px;
+}
+
+.message {
+  max-width: 75%;
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin: 10px 0;
+  word-wrap: break-word;
+  display: inline-block;
+  clear: both;
+}
+
+.user {
+  background-color: #66fcf1;
+  color:#1f2833;
+  float: right;
+  text-align: left;
+}
+
+.bot {
+  background-color: #0b0c10;
+  color: #45a29e;
+  float: left;
+  text-align: left;
+}
+
+form {
+  display: flex;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #45a29e;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  background: #0b0c10;
+  color: white;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #45a29e;
+  color: #0b0c10;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.copy-btn {
+  margin-top: 8px;
+  font-size: 0.85em;
+  padding: 4px 10px;
+  border: none;
+  background-color: #0b0c10;
+  color: #66fcf1;
+  border: 1px solid #66fcf1;
+  border-radius: 6px;
+  cursor: pointer;
+  float: right;
+}
+
+.copy-btn:hover {
+  background-color: #1f2833;
+}
+
+.copy-btn:active {
+  background-color: #3ffcef;
+  transform: scale(0.95);
+  box-shadow: 0 0 8px rgba(77, 255, 231, 0.8);
+  transition: transform 0.1s ease;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.clear-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9em;
+  box-shadow: 0 0 5px rgba(255, 77, 77, 0.5);
+}
+
+.clear-btn:hover {
+  background-color: #e60000;
+}
+
+.clear-btn:active {
+  background-color: #cc0000;
+  transform: scale(0.95);
+  box-shadow: 0 0 8px rgba(255, 77, 77, 0.8);
+  transition: transform 0.1s ease;
+}
+
+.fade-out {
+  animation: fadeOut 0.4s ease forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
