@@ -1,24 +1,11 @@
 fastapi==0.110.0
 uvicorn[standard]==0.29.0
 
-# LangChain Core & Integrations
-langchain==0.1.15
-langchain-core==0.1.47
-langchain-community==0.2.15
-langchain-text-splitters==0.2.2
-langchain-prompts==0.1.5
-langchain-huggingface==0.0.3
+langchain==0.2.6
+langchain-core==0.2.26
+langchain-community==0.2.3
 langchain-groq==0.1.9
 
-# PDF, Unstructured parsing support
-unstructured==0.15.0
-unstructured[pdf]==0.15.0
-
-# NLP Utilities
 nltk==3.8.1
-
-# Type validation
 pydantic==2.7.1
-
-# For CORS and static files
 python-multipart==0.0.9
