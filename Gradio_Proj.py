@@ -13,6 +13,10 @@ from langchain_core.output_parsers import StrOutputParser
 
 import re
 
+import mimetypes
+mimetypes.add_type("application/javascript", ".js")
+mimetypes.add_type("text/css", ".css")
+
 # List of space-related keywords (for filtering queries)
 space_keywords = [
     # Basic space terms
@@ -153,7 +157,7 @@ space_keywords = [
 
 app = FastAPI()
 # Serve static files (CSS + JS)
-app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/static", StaticFiles(directory="static", html=True), name="static")
 
 
 # Add CORS so the frontend can access this API
@@ -166,7 +170,7 @@ app.add_middleware(
 )
 
 # Set the environment variable for the GROQ API key
-os.environ["GROQ_API_KEY"] = "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"
+os.environ["GROQ_API_KEY"] = "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"
 
 llm = ChatGroq(
     temperature=0.3,
