@@ -4,7 +4,6 @@ uvicorn[standard]==0.22.0
 langchain==0.0.208
 langchain-community==0.0.5
 langchain-text-splitters==0.2.0
-langchain-prompts==0.0.4
 langchain-groq==0.0.1
 
 nltk==3.8.1
