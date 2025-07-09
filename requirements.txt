@@ -1,18 +1,12 @@
 fastapi==0.95.2
 uvicorn[standard]==0.22.0
 
-# LangChain Core & Integrations (compatible with pydantic 1.x)
 langchain==0.0.208
 langchain-community==0.0.5
-langchain-text-splitters==0.0.3
+langchain-text-splitters==0.2.0
 langchain-prompts==0.0.4
 langchain-groq==0.0.1
 
-# NLP Utilities
 nltk==3.8.1
-
-# Type validation
 pydantic==1.10.13
-
-# For CORS and static files
 python-multipart==0.0.9
