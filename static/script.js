@@ -11,7 +11,7 @@ chatForm.addEventListener("submit", async (e) => {
   userInput.value = "";
 
   try {
-    const response = await fetch(`${window.location.origin}/ask`, {
+    const response = await fetch("https://space-chatbot.onrender.com/ask", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
