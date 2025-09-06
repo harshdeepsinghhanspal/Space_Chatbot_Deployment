@@ -170,7 +170,7 @@ app.add_middleware(
 )
 
 # Set the environment variable for the GROQ API key
-os.environ["GROQ_API_KEY"] = "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"
+os.environ["GROQ_API_KEY"] = "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"
 
 llm = ChatGroq(
     temperature=0.3,
@@ -241,3 +241,4 @@ async def ask_spacebot(query: Query):
 
     except Exception as e:
         return {"response": f"❌ Error: {str(e)}"}
+
