@@ -176,7 +176,7 @@ app.add_middleware(
 )
 
 # Set the environment variable for the GROQ API key
-os.environ["GROQ_API_KEY"] = "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"
+os.environ["GROQ_API_KEY"] = "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"
 
 llm = ChatGroq(
     temperature=0.3,
@@ -264,3 +264,4 @@ async def ask_spacebot(query: Query):
 async def clear_memory():
     memory.clear()   # Clears stored chat history
     return {"response": "🧹 Memory cleared!"}
+
